@@ -1,5 +1,7 @@
 Config = {}
 
+Config.UseQB = true -- 'true' or 'false', for vehiclekeys, (works with qbcore and qbox) for no framework put false
+
 Config.TimeTrialMarker = {
     type = 1,           -- marker type (if you dont know what this means dont touch)
     scale = vector3(1.5, 1.5, 0.2),  -- size of the marker
