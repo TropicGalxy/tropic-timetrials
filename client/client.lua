@@ -68,6 +68,10 @@ function spawnTrialVehicle(vehicleModel, spawnCoords)
 
     spawnedVehicle = CreateVehicle(model, spawnCoords.x, spawnCoords.y, spawnCoords.z, spawnCoords.w, true, false)
     TaskWarpPedIntoVehicle(PlayerPedId(), spawnedVehicle, -1)
+
+    if Config.UseQB then
+        TriggerEvent('vehiclekeys:client:SetOwner', GetVehicleNumberPlateText(veh))
+    end
 end
 
 
